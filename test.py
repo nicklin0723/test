@@ -1,3 +1,7 @@
-from datetime import datetime
-id_board = "59794c788ee100440fc771a8"
-datetime.fromtimestamp(int(id_board[0:8],16))
+import requests
+
+url = "https://api.trello.com/1/boards/tBmYPSYe?fields=id,name,idOrganization,dateLastActivity&lists=open&list_fields=id,name"
+
+response = requests.request("GET", url)
+
+print(response.text)
