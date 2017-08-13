@@ -1,6 +1,6 @@
 import requests
 
-url = "https://trello.com/b/xV63Lw5W/welcome-board"
+url = "https://api.trello.com/1/actions/59794c788ee100440fc771a8"
 
 response = requests.request("GET", url)
 
