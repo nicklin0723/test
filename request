@@ -1,2 +1,30 @@
-https://api.trello.com/1/boards/59794c788ee100440fc771a8?fields=Stuff to try (this is a list),url&key={acdb6dd3b27c41bc6eb0934ed5f0eb47
-}&token={3f81cd9a89490a0591088194d16e19770a149b5da754a00d795695221f0a0be3}
+<HTML>
+  <HEAD>
+    <title> Trello儀表板</ title>
+    <link rel =“stylesheet”media =“screen”href =“http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css”>
+  </ HEAD>
+  <BODY>
+    <div class =“container”>
+      <h1> Trello儀表板</ h1>
+      <！ - 我們將把我們的儀表板放在這裡 - >
+    </ DIV> 
+  </ BODY>
+
+  <script src =“http://code.jquery.com/jquery-1.11.3.min.js”type =“text / javascript”> </ script>
+  <！ - 用你的應用程序鍵替換AppKey  - >
+  <script src =“https://api.trello.com/1/client.js?key=[AppKey]”> </ script>
+  
+  <script type =“text / javascript”>
+    Trello.authorize（{
+      鍵入：“彈出”，
+      名稱：“Trello儀表板”，
+      範圍： {
+        讀：真，
+        寫：假 
+      }，
+      到期：“永不”，
+      success：function（）{console.log（“Successful authentication”）; }，
+      error：function（）{console.log（“Failed authentication”）; }
+    }）;
+  </ SCRIPT>
+</ HTML>
