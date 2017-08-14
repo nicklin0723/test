@@ -12,7 +12,7 @@
 
   <script src =“http://code.jquery.com/jquery-1.11.3.min.js”type =“text / javascript”> </ script>
   <！ - 用你的應用程序鍵替換AppKey  - >
-  <script src =“https://api.trello.com/1/client.js?key=[AppKey]”> </ script>
+  <script src =“https://api.trello.com/1/client.js?key=[acdb6dd3b27c41bc6eb0934ed5f0eb47]”> </ script>
   
   <script type =“text / javascript”>
     Trello.authorize（{
