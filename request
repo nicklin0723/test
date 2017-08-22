@@ -4,13 +4,10 @@ $cardID ='59794c788ee100440fc771a4';
 $createdDate = date('r', hexdec( substr( $cardID , 0, 8 ) ) );
 echo "Welcome board Date time =, $createdDate<br>" ;
 
-
-date_default_timezone_set("Asia/Taipei");
 $cardID1 = '5993caef74930e5009d92ea5';
 $createdDate1 = date('r', hexdec( substr( $cardID1 , 0, 8 ) ) );
 echo "test =", $createdDate1;
 
-date_default_timezone_set("Asia/Taipei");
 $date1= $createdDate;
 $date2= $createdDate1;
 echo "<br><br>看板搬移天數:",floor((strtotime($date2) - strtotime($date1))/86400),"天";
